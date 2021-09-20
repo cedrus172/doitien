@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-input {
+            display: inline;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page-content">
+        <table>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="form-input">
+                            <input type="number" name="amount" id="amountTxt">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-input">
+                            <select name="fromCurrency" id="fromCurrency">
+                                <option value="vnd" selected>VND</option>
+                                <option value="usd">USD</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-input">
+                            <select name="toCurrency" id="toCurrency">
+                                <option value="vnd">VND</option>
+                                <option value="usd" selected>USD</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-input">
+                            <input type="button" value="Convert" onclick="convert();">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-input">
+            <p id="result"></p>
+        </div>
+
+
+    </section>
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>
